@@ -21,5 +21,6 @@ env/
 .vscode/
 .idea/
 
-# Logs (keep the folder, ignore actual log files)
+# Logs (keep the folder, ignore actual log files except committed run logs)
 logs/*.log
+!logs/trading_bot_20260612.log

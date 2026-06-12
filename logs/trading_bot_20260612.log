@@ -1,0 +1,30 @@
+2026-06-12 15:34:26 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 15:34:26 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None stop_price=None
+2026-06-12 15:34:26 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None stop_price=None
+2026-06-12 15:34:26 | ERROR    | trading_bot.cli | Validation error: --price is required for LIMIT orders. Example: --price 95000
+2026-06-12 15:34:35 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 15:34:35 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=HODL type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 15:34:35 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=HODL type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 15:34:35 | ERROR    | trading_bot.cli | Validation error: --side must be one of ['BUY', 'SELL'], got 'HODL'.
+2026-06-12 16:02:15 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:02:15 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 16:02:15 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 16:02:15 | DEBUG    | trading_bot.validators | Validation passed.
+2026-06-12 16:02:15 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet).
+2026-06-12 16:02:15 | INFO     | trading_bot.orders | Placing order — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 16:02:15 | DEBUG    | trading_bot.client | POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1781260335227}
+2026-06-12 16:02:15 | DEBUG    | trading_bot.client | Response HTTP 200: {"orderId":15014275212,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"THi2yJOgUfsoFUX9ZAmFIz","price":"0.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1781260335561}
+2026-06-12 16:02:15 | INFO     | trading_bot.orders | Order accepted — orderId=15014275212 status=NEW executedQty=0.0000 avgPrice=None
+2026-06-12 16:02:26 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:02:26 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=120000.0 stop_price=None
+2026-06-12 16:02:26 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=120000.0 stop_price=None
+2026-06-12 16:02:26 | DEBUG    | trading_bot.validators | Validation passed.
+2026-06-12 16:02:26 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet).
+2026-06-12 16:02:26 | INFO     | trading_bot.orders | Placing order — symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=120000.0 stop_price=None
+2026-06-12 16:02:26 | DEBUG    | trading_bot.client | POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 120000.0, 'timeInForce': 'GTC', 'timestamp': 1781260346184}
+2026-06-12 16:02:26 | DEBUG    | trading_bot.client | Response HTTP 200: {"orderId":15014285903,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"9u9LocgW8rILzR1BvNqdbM","price":"120000.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1781260346419}
+2026-06-12 16:02:26 | INFO     | trading_bot.orders | Order accepted — orderId=15014285903 status=NEW executedQty=0.0000 avgPrice=None
+2026-06-12 16:04:00 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:04:00 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None stop_price=None
+2026-06-12 16:04:00 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None stop_price=None
+2026-06-12 16:04:00 | ERROR    | trading_bot.cli | Validation error: --price is required for LIMIT orders. Example: --price 95000
