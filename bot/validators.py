@@ -9,7 +9,7 @@ from .logging_config import get_logger
 logger = get_logger("validators")
 
 VALID_SIDES = {"BUY", "SELL"}
-VALID_TYPES = {"MARKET", "LIMIT", "STOP_MARKET"}  # extendable
+VALID_TYPES = {"MARKET", "LIMIT"}
 
 
 def validate_order_params(
@@ -74,20 +74,6 @@ def validate_order_params(
         if p <= 0:
             raise ValueError(f"--price must be greater than 0, got {p}.")
 
-    # --- stop_price (required for STOP_MARKET) ---
-    if order_type.upper() == "STOP_MARKET":
-        if stop_price is None:
-            raise ValueError(
-                "--stop-price is required for STOP_MARKET orders. "
-                "Example: --stop-price 94000"
-            )
-        try:
-            sp = float(stop_price)
-        except (TypeError, ValueError):
-            raise ValueError(
-                f"--stop-price must be a positive number, got '{stop_price}'."
-            )
-        if sp <= 0:
-            raise ValueError(f"--stop-price must be greater than 0, got {sp}.")
+    # --- stop_price not used (STOP orders not supported on testnet) ---
 
     logger.debug("Validation passed.")

@@ -28,3 +28,73 @@
 2026-06-12 16:04:00 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None stop_price=None
 2026-06-12 16:04:00 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None stop_price=None
 2026-06-12 16:04:00 | ERROR    | trading_bot.cli | Validation error: --price is required for LIMIT orders. Example: --price 95000
+2026-06-12 16:08:50 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:08:50 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 16:08:50 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 16:08:50 | DEBUG    | trading_bot.validators | Validation passed.
+2026-06-12 16:08:50 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet).
+2026-06-12 16:08:50 | INFO     | trading_bot.orders | Placing order — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 16:08:50 | DEBUG    | trading_bot.client | POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1781260730442}
+2026-06-12 16:08:51 | DEBUG    | trading_bot.client | Response HTTP 200: {"orderId":15014660675,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"eGIqnLrznWtkaHGjev5T7h","price":"0.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1781260730727}
+2026-06-12 16:08:51 | INFO     | trading_bot.orders | Order accepted — orderId=15014660675 status=NEW executedQty=0.0000 avgPrice=None
+2026-06-12 16:08:59 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:08:59 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=120000.0 stop_price=None
+2026-06-12 16:08:59 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=120000.0 stop_price=None
+2026-06-12 16:08:59 | DEBUG    | trading_bot.validators | Validation passed.
+2026-06-12 16:08:59 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet).
+2026-06-12 16:08:59 | INFO     | trading_bot.orders | Placing order — symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=120000.0 stop_price=None
+2026-06-12 16:08:59 | DEBUG    | trading_bot.client | POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 120000.0, 'timeInForce': 'GTC', 'timestamp': 1781260739083}
+2026-06-12 16:08:59 | DEBUG    | trading_bot.client | Response HTTP 200: {"orderId":15014670758,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"oJxLa0yoWTIs8NkVX2ROfI","price":"120000.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1781260739338}
+2026-06-12 16:08:59 | INFO     | trading_bot.orders | Order accepted — orderId=15014670758 status=NEW executedQty=0.0000 avgPrice=None
+2026-06-12 16:09:07 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:09:07 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None stop_price=None
+2026-06-12 16:09:07 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None stop_price=None
+2026-06-12 16:09:07 | ERROR    | trading_bot.cli | Validation error: --price is required for LIMIT orders. Example: --price 95000
+2026-06-12 16:09:15 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:09:15 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=SELL type=STOP_MARKET qty=0.01 price=None stop_price=94000.0
+2026-06-12 16:09:15 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=SELL type=STOP_MARKET qty=0.01 price=None stop_price=94000.0
+2026-06-12 16:09:15 | DEBUG    | trading_bot.validators | Validation passed.
+2026-06-12 16:09:15 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet).
+2026-06-12 16:09:15 | INFO     | trading_bot.orders | Placing order — symbol=BTCUSDT side=SELL type=STOP_MARKET qty=0.01 price=None stop_price=94000.0
+2026-06-12 16:09:15 | DEBUG    | trading_bot.client | POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': 0.01, 'stopPrice': 94000.0, 'timestamp': 1781260755881}
+2026-06-12 16:09:16 | DEBUG    | trading_bot.client | Response HTTP 400: {"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-06-12 16:09:16 | ERROR    | trading_bot.client | Binance API error — code=-4120 msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-06-12 16:09:16 | ERROR    | trading_bot.cli | Binance API error: code=-4120 msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-06-12 16:09:37 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:09:37 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=SELL type=STOP_MARKET qty=0.01 price=None stop_price=94000.0
+2026-06-12 16:09:37 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=SELL type=STOP_MARKET qty=0.01 price=None stop_price=94000.0
+2026-06-12 16:09:37 | DEBUG    | trading_bot.validators | Validation passed.
+2026-06-12 16:09:37 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet).
+2026-06-12 16:09:37 | INFO     | trading_bot.orders | Placing order — symbol=BTCUSDT side=SELL type=STOP_MARKET qty=0.01 price=None stop_price=94000.0
+2026-06-12 16:09:37 | DEBUG    | trading_bot.client | POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': 0.01, 'stopPrice': 94000.0, 'workingType': 'MARK_PRICE', 'timestamp': 1781260777162}
+2026-06-12 16:09:37 | DEBUG    | trading_bot.client | Response HTTP 400: {"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-06-12 16:09:37 | ERROR    | trading_bot.client | Binance API error — code=-4120 msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-06-12 16:09:37 | ERROR    | trading_bot.cli | Binance API error: code=-4120 msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-06-12 16:10:51 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:10:51 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=SELL type=STOP qty=0.01 price=93900.0 stop_price=94000.0
+2026-06-12 16:10:51 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=SELL type=STOP qty=0.01 price=93900.0 stop_price=94000.0
+2026-06-12 16:10:51 | DEBUG    | trading_bot.validators | Validation passed.
+2026-06-12 16:10:51 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet).
+2026-06-12 16:10:51 | INFO     | trading_bot.orders | Placing order — symbol=BTCUSDT side=SELL type=STOP qty=0.01 price=93900.0 stop_price=94000.0
+2026-06-12 16:10:51 | DEBUG    | trading_bot.client | POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.01, 'stopPrice': 94000.0, 'price': 93900.0, 'timeInForce': 'GTC', 'timestamp': 1781260851147}
+2026-06-12 16:10:51 | DEBUG    | trading_bot.client | Response HTTP 400: {"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-06-12 16:10:51 | ERROR    | trading_bot.client | Binance API error — code=-4120 msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-06-12 16:10:51 | ERROR    | trading_bot.cli | Binance API error: code=-4120 msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-06-12 16:11:30 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:11:30 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 16:11:30 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 16:11:30 | DEBUG    | trading_bot.validators | Validation passed.
+2026-06-12 16:11:30 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet).
+2026-06-12 16:11:30 | INFO     | trading_bot.orders | Placing order — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop_price=None
+2026-06-12 16:11:30 | DEBUG    | trading_bot.client | POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1781260890684}
+2026-06-12 16:11:31 | DEBUG    | trading_bot.client | Response HTTP 200: {"orderId":15014821390,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"4Q6OybaRvQE6rjiFbYeCwy","price":"0.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1781260890903}
+2026-06-12 16:11:31 | INFO     | trading_bot.orders | Order accepted — orderId=15014821390 status=NEW executedQty=0.0000 avgPrice=None
+2026-06-12 16:11:39 | DEBUG    | trading_bot | Logging initialised. Log file: C:\Users\MONIKA\Desktop\VScode\DJANGO\portfolio\trading_bot\logs\trading_bot_20260612.log
+2026-06-12 16:11:39 | INFO     | trading_bot.cli | CLI invoked — symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=120000.0 stop_price=None
+2026-06-12 16:11:39 | DEBUG    | trading_bot.validators | Validating params: symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=120000.0 stop_price=None
+2026-06-12 16:11:39 | DEBUG    | trading_bot.validators | Validation passed.
+2026-06-12 16:11:39 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet).
+2026-06-12 16:11:39 | INFO     | trading_bot.orders | Placing order — symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=120000.0 stop_price=None
+2026-06-12 16:11:39 | DEBUG    | trading_bot.client | POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 120000.0, 'timeInForce': 'GTC', 'timestamp': 1781260899983}
+2026-06-12 16:11:40 | DEBUG    | trading_bot.client | Response HTTP 200: {"orderId":15014828146,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"POyBTHOdeXXo8Eey1KOo1j","price":"120000.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1781260900242}
+2026-06-12 16:11:40 | INFO     | trading_bot.orders | Order accepted — orderId=15014828146 status=NEW executedQty=0.0000 avgPrice=None

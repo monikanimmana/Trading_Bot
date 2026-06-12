@@ -57,8 +57,8 @@ def place_order(
         params["price"] = price
         params["timeInForce"] = "GTC"  # Good Till Cancel
 
-    if order_type.upper() == "STOP_MARKET":
-        params["stopPrice"] = stop_price
+    if order_type.upper() == "STOP":
+        pass  # reserved - not supported on testnet
 
     logger.info(
         "Placing order — symbol=%s side=%s type=%s qty=%s price=%s stop_price=%s",

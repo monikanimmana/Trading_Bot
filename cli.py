@@ -40,7 +40,7 @@ Examples:
     )
     parser.add_argument("--symbol",     required=True,  help="Trading pair, e.g. BTCUSDT")
     parser.add_argument("--side",       required=True,  help="BUY or SELL")
-    parser.add_argument("--type",       required=True,  dest="order_type", help="MARKET, LIMIT, or STOP_MARKET")
+    parser.add_argument("--type",       required=True,  dest="order_type", help="MARKET or LIMIT")
     parser.add_argument("--quantity",   required=True,  type=float, help="Order quantity, e.g. 0.01")
     parser.add_argument("--price",      required=False, type=float, default=None, help="Limit price (required for LIMIT orders)")
     parser.add_argument("--stop-price", required=False, type=float, default=None, dest="stop_price", help="Stop trigger price (required for STOP_MARKET orders)")
